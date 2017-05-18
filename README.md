@@ -1,3 +1,3 @@
-# NEXT INSTITIUTE Game Server subject
+## NEXT INSTITIUTE Game Server subject
 
 *
