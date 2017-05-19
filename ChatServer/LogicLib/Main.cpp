@@ -31,7 +31,7 @@ namespace NLogicLib
 
 		LoadConfig();
 
-		m_pNetwork = std::make_unique<NServerNetLib::TcpNetwork>();
+		m_pNetwork = std::make_unique<NServerNetLib::CIocpServer>();
 		auto result = m_pNetwork->Init(m_pServerConfig.get(), m_pLogger.get());
 			
 		if (result != NET_ERROR_CODE::NONE)
@@ -53,8 +53,8 @@ namespace NLogicLib
 						m_pNetwork.get(), m_pLogger.get());
 
 		//RoomManager √ ±‚»≠
-		m_pRoomMgr = std::make_unique<RoomManager>();
-		m_pRoomMgr->Init({ m_pServerConfig->MaxRoomCountByLobby, m_pServerConfig->MaxRoomUserCount }, m_pNetwork.get(), m_pLogger.get());
+// 		m_pRoomMgr = std::make_unique<RoomManager>();
+// 		m_pRoomMgr->Init({ m_pServerConfig->MaxRoomCountByLobby, m_pServerConfig->MaxRoomUserCount }, m_pNetwork.get(), m_pLogger.get());
 
 
 		m_pPacketProc = std::make_unique<PacketProcess>();

@@ -21,6 +21,7 @@ namespace NLogicLib
 	{
 		m_Index = index;
 		m_MaxUserCount = maxUserCount;
+		m_pGame = std::make_unique<CGame>();
 	}
 
 	void Room::SetNetwork(TcpNet* pNetwork, ILog* pLogger)
@@ -132,7 +133,8 @@ namespace NLogicLib
 
 			//유저 리스트에 자신 id도 표시하고싶어서 지움
 // 			if (roomUser->GetSessioIndex() == sessionId)
-// 				continue;
+// 				continue;
+
 
 			pktRes.UserInfo[userCount].UserIndex = (short)i;
 			strncpy_s(pktRes.UserInfo[userCount].UserID, NCommon::MAX_USER_ID_SIZE + 1, roomUser->GetID().c_str(), NCommon::MAX_USER_ID_SIZE);
@@ -202,4 +204,15 @@ namespace NLogicLib
 
 		SendToAllUser((short)PACKET_ID::ROOM_CHAT_NTF, sizeof(pkt), (char*)&pkt, sessionIndex);
 	}
+
+	bool Room::IsMaster(const short userIndex)
+	{
+		return m_UserList[0]->GetIndex() == userIndex ? true : false;
+	}
+
+	NLogicLib::CGame* Room::GetGameObj()
+	{
+		return m_pGame.get();
+	}
+
 }

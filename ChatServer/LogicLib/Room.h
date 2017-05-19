@@ -2,8 +2,9 @@
 
 #include <vector>
 #include <string>
-
+#include <memory>
 #include "User.h"
+#include "Game.h"
 
 namespace NServerNetLib { class ITcpNetwork; }
 namespace NServerNetLib { class ILog; }
@@ -54,6 +55,11 @@ namespace NLogicLib
 
 		void NotifyChat(const int sessionIndex, const char* pszUserID, const wchar_t* pszMsg);
 
+		bool IsMaster(const short userIndex);
+		CGame* GetGameObj();
+
+
+
 	private:
 		ILog* m_pRefLogger;
 		TcpNet* m_pRefNetwork;
@@ -64,5 +70,7 @@ namespace NLogicLib
 		bool m_IsUsed = false;
 		std::wstring m_Title;
 		std::vector<User*> m_UserList;
+
+		std::unique_ptr<CGame> m_pGame;
 	};
-}
+}	

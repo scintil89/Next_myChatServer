@@ -78,5 +78,9 @@ namespace NLogicLib
 		ERROR_CODE RoomChat(PacketInfo packetInfo);
 
 		ERROR_CODE RoomUserList(PacketInfo packetInfo);
+
+		ERROR_CODE RoomMasterGameStart(PacketInfo packetInfo);
+
+		ERROR_CODE RoomGameStart(PacketInfo packetInfo);
 	};
 }

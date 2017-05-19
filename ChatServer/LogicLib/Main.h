@@ -17,7 +17,7 @@ namespace NLogicLib
 {
 	class UserManager;
 	class LobbyManager;
-	class RoomManager;
+	//class RoomManager;
 	class PacketProcess;
 
 	class Main
@@ -44,12 +44,11 @@ namespace NLogicLib
 
 		std::unique_ptr<NServerNetLib::ServerConfig>	m_pServerConfig;
 		std::unique_ptr<NServerNetLib::ILog>			m_pLogger;
-
-		std::unique_ptr<NServerNetLib::ITcpNetwork>		m_pNetwork;
+		std::unique_ptr<NServerNetLib::CIocpServer>		m_pNetwork; //ITcpNetwork 에서 CIocpServer로 변경
 		std::unique_ptr<PacketProcess>					m_pPacketProc;
 		std::unique_ptr<UserManager>					m_pUserMgr;
 		std::unique_ptr<LobbyManager>					m_pLobbyMgr;
-		std::unique_ptr<RoomManager>					m_pRoomMgr; //룸메니저를 추가해줌
+		//std::unique_ptr<RoomManager>					m_pRoomMgr; //룸메니저를 추가해줌
 		
 	};
 }
