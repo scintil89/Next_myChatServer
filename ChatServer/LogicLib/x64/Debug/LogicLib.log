@@ -1,0 +1,226 @@
+﻿  UserManager.cpp
+  RoomManager.cpp
+  Room.cpp
+  PacketProcessRoom.cpp
+c:\project\mygameserver\chatserver\logiclib\packetprocessroom.cpp(301): error C2084: 'ERROR_CODE NLogicLib::PacketProcess::RoomUserList(NLogicLib::PacketProcess::PacketInfo)' 함수에 이미 본문이 있습니다.
+  c:\project\mygameserver\chatserver\logiclib\packetprocessroom.cpp(239): note: 'RoomUserList'의 이전 정의를 참조하십시오.
+c:\project\mygameserver\chatserver\logiclib\packetprocessroom.cpp(388): error C3867: 'NLogicLib::User::GetIndex': 비표준 구문입니다. '&'를 사용하여 멤버 포인터를 만드세요.
+c:\project\mygameserver\chatserver\logiclib\packetprocessroom.cpp(413): error C3867: 'NLogicLib::User::GetIndex': 비표준 구문입니다. '&'를 사용하여 멤버 포인터를 만드세요.
+c:\project\mygameserver\chatserver\logiclib\packetprocessroom.cpp(470): error C3867: 'NLogicLib::User::GetIndex': 비표준 구문입니다. '&'를 사용하여 멤버 포인터를 만드세요.
+  PacketProcessLogin.cpp
+  PacketProcessLobby.cpp
+  PacketProcess.cpp
+  Main.cpp
+c:\project\mygameserver\chatserver\logiclib\main.h(47): error C2039: 'CIocpServer': 'NServerNetLib'의 멤버가 아닙니다.
+  c:\project\mygameserver\chatserver\logiclib\main.h(9): note: 'NServerNetLib' 선언을 참조하십시오.
+c:\project\mygameserver\chatserver\logiclib\main.h(47): error C2065: 'CIocpServer': 선언되지 않은 식별자입니다.
+c:\project\mygameserver\chatserver\logiclib\main.h(47): error C2923: 'std::unique_ptr': 'CIocpServer'은(는) '_Ty' 매개 변수에 대한 올바른 템플릿 형식 인수가 아닙니다.
+c:\project\mygameserver\chatserver\logiclib\main.h(47): error C3203: 'default_delete': 특수화되지 않은 클래스 템플릿은(는) 템플릿 매개 변수 '_Dx'에 대한 템플릿 인수로 사용할 수 없습니다. 실제 형식이 필요합니다.
+c:\project\mygameserver\chatserver\logiclib\main.cpp(20): error C2512: 'std::unique_ptr': 사용할 수 있는 적절한 기본 생성자가 없습니다.
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(1278): note: 'std::unique_ptr' 선언을 참조하십시오.
+c:\project\mygameserver\chatserver\logiclib\main.cpp(34): error C2039: 'CIocpServer': 'NServerNetLib'의 멤버가 아닙니다.
+  c:\project\mygameserver\chatserver\logiclib\main.h(9): note: 'NServerNetLib' 선언을 참조하십시오.
+c:\project\mygameserver\chatserver\logiclib\main.cpp(34): error C2065: 'CIocpServer': 선언되지 않은 식별자입니다.
+c:\project\mygameserver\chatserver\logiclib\main.cpp(34): error C2672: 'std::make_unique': 일치하는 오버로드된 함수가 없습니다.
+c:\project\mygameserver\chatserver\logiclib\main.cpp(34): error C2974: 'std::make_unique': '_Ty'의 템플릿 인수가 잘못되었습니다. 형식이 필요합니다.
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(1644): note: 'std::make_unique' 선언을 참조하십시오.
+c:\project\mygameserver\chatserver\logiclib\main.cpp(35): error C2678: 이항 '->': 왼쪽 피연산자로 'std::unique_ptr' 형식을 사용하는 연산자가 없거나 허용되는 변환이 없습니다.
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(1405): note: '_Get_deleter_pointer_type<_Ty,remove_reference<_This2>::type>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const'일 수 있습니다.
+  c:\project\mygameserver\chatserver\logiclib\main.cpp(35): note: 인수 목록 '(std::unique_ptr)'을(를) 일치시키는 동안
+c:\project\mygameserver\chatserver\logiclib\main.cpp(35): error C2039: 'Init': 'std::unique_ptr'의 멤버가 아닙니다.
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(1278): note: 'std::unique_ptr' 선언을 참조하십시오.
+c:\project\mygameserver\chatserver\logiclib\main.cpp(37): error C3536: 'result': 초기화되기 전에 사용할 수 없습니다.
+c:\project\mygameserver\chatserver\logiclib\main.cpp(37): error C2678: 이항 '!=': 왼쪽 피연산자로 'int' 형식을 사용하는 연산자가 없거나 허용되는 변환이 없습니다.
+  c:\program files (x86)\windows kits\8.1\include\shared\guiddef.h(197): note: 'bool operator !=(const GUID &,const GUID &)'일 수 있습니다.
+  c:\project\mygameserver\chatserver\logiclib\main.cpp(37): note: 인수 목록 '(int, NServerNetLib::NET_ERROR_CODE)'을(를) 일치시키는 동안
+c:\project\mygameserver\chatserver\logiclib\main.cpp(53): error C2662: '_Get_deleter_pointer_type<_Ty,remove_reference<_This2>::type>::type std::unique_ptr<_Ty,_Dx>::get(void) noexcept const': 'this' 포인터를 'std::unique_ptr'에서 'const std::unique_ptr<_Ty,_Dx> &'(으)로 변환할 수 없습니다.
+  c:\project\mygameserver\chatserver\logiclib\main.cpp(53): note: 원인: 'std::unique_ptr'에서 'const std::unique_ptr<_Ty,_Dx>'(으)로 변환할 수 없습니다.
+  c:\project\mygameserver\chatserver\logiclib\main.cpp(53): note: 변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+c:\project\mygameserver\chatserver\logiclib\main.cpp(53): error C2660: 'NLogicLib::LobbyManager::Init': 함수는 2개의 매개 변수를 사용하지 않습니다.
+c:\project\mygameserver\chatserver\logiclib\main.cpp(61): error C2662: '_Get_deleter_pointer_type<_Ty,remove_reference<_This2>::type>::type std::unique_ptr<_Ty,_Dx>::get(void) noexcept const': 'this' 포인터를 'std::unique_ptr'에서 'const std::unique_ptr<_Ty,_Dx> &'(으)로 변환할 수 없습니다.
+  c:\project\mygameserver\chatserver\logiclib\main.cpp(61): note: 원인: 'std::unique_ptr'에서 'const std::unique_ptr<_Ty,_Dx>'(으)로 변환할 수 없습니다.
+  c:\project\mygameserver\chatserver\logiclib\main.cpp(61): note: 변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+c:\project\mygameserver\chatserver\logiclib\main.cpp(61): error C2065: 'm_pRoomMgr': 선언되지 않은 식별자입니다.
+c:\project\mygameserver\chatserver\logiclib\main.cpp(61): error C2228: '.get' 왼쪽에는 클래스/구조체/공용 구조체가 있어야 합니다.
+  c:\project\mygameserver\chatserver\logiclib\main.cpp(61): note: 'unknown-type' 형식입니다.
+c:\project\mygameserver\chatserver\logiclib\main.cpp(61): error C2660: 'NLogicLib::PacketProcess::Init': 함수는 4개의 매개 변수를 사용하지 않습니다.
+c:\project\mygameserver\chatserver\logiclib\main.cpp(71): error C2451: 'std::unique_ptr' 형식의 조건식은 올바르지 않습니다.
+  c:\project\mygameserver\chatserver\logiclib\main.cpp(71): note: 이 변환을 수행할 수 있는 사용 가능한 사용자 정의 변환 연산자가 없거나 연산자를 호출할 수 없습니다.
+c:\project\mygameserver\chatserver\logiclib\main.cpp(73): error C2678: 이항 '->': 왼쪽 피연산자로 'std::unique_ptr' 형식을 사용하는 연산자가 없거나 허용되는 변환이 없습니다.
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(1405): note: '_Get_deleter_pointer_type<_Ty,remove_reference<_This2>::type>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const'일 수 있습니다.
+  c:\project\mygameserver\chatserver\logiclib\main.cpp(73): note: 인수 목록 '(std::unique_ptr)'을(를) 일치시키는 동안
+c:\project\mygameserver\chatserver\logiclib\main.cpp(73): error C2039: 'Release': 'std::unique_ptr'의 멤버가 아닙니다.
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(1278): note: 'std::unique_ptr' 선언을 참조하십시오.
+c:\project\mygameserver\chatserver\logiclib\main.cpp(86): error C2678: 이항 '->': 왼쪽 피연산자로 'std::unique_ptr' 형식을 사용하는 연산자가 없거나 허용되는 변환이 없습니다.
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(1405): note: '_Get_deleter_pointer_type<_Ty,remove_reference<_This2>::type>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const'일 수 있습니다.
+  c:\project\mygameserver\chatserver\logiclib\main.cpp(86): note: 인수 목록 '(std::unique_ptr)'을(를) 일치시키는 동안
+c:\project\mygameserver\chatserver\logiclib\main.cpp(86): error C2039: 'Run': 'std::unique_ptr'의 멤버가 아닙니다.
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(1278): note: 'std::unique_ptr' 선언을 참조하십시오.
+c:\project\mygameserver\chatserver\logiclib\main.cpp(90): error C2678: 이항 '->': 왼쪽 피연산자로 'std::unique_ptr' 형식을 사용하는 연산자가 없거나 허용되는 변환이 없습니다.
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(1405): note: '_Get_deleter_pointer_type<_Ty,remove_reference<_This2>::type>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const'일 수 있습니다.
+  c:\project\mygameserver\chatserver\logiclib\main.cpp(90): note: 인수 목록 '(std::unique_ptr)'을(를) 일치시키는 동안
+c:\project\mygameserver\chatserver\logiclib\main.cpp(90): error C2039: 'GetPacketInfo': 'std::unique_ptr'의 멤버가 아닙니다.
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\memory(1278): note: 'std::unique_ptr' 선언을 참조하십시오.
+c:\project\mygameserver\chatserver\logiclib\main.cpp(92): error C3536: 'packetInfo': 초기화되기 전에 사용할 수 없습니다.
+c:\project\mygameserver\chatserver\logiclib\main.cpp(92): error C2228: '.PacketId' 왼쪽에는 클래스/구조체/공용 구조체가 있어야 합니다.
+  c:\project\mygameserver\chatserver\logiclib\main.cpp(92): note: 'int' 형식입니다.
+c:\project\mygameserver\chatserver\logiclib\main.cpp(98): error C2664: 'void NLogicLib::PacketProcess::Process(NLogicLib::PacketProcess::PacketInfo)': 인수 1을(를) 'int'에서 'NLogicLib::PacketProcess::PacketInfo'(으)로 변환할 수 없습니다.
+  c:\project\mygameserver\chatserver\logiclib\main.cpp(98): note: 소스 형식을 가져올 수 있는 생성자가 없거나 생성자 오버로드 확인이 모호합니다.
+  LobbyManager.cpp
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(737): error C2280: 'NLogicLib::Room::Room(const NLogicLib::Room &)': 삭제된 함수를 참조하려고 합니다.
+  c:\project\mygameserver\chatserver\logiclib\room.h(75): note: 컴파일러에서 여기에 'NLogicLib::Room::Room'을(를) 생성했습니다.
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(857): note: 컴파일 중인 함수 템플릿 인스턴스화 'void std::allocator<_Ty>::construct<_Objty,const NLogicLib::Room&>(_Objty *,const NLogicLib::Room &)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Ty=NLogicLib::Room,
+              _Objty=NLogicLib::Room
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(857): note: 컴파일 중인 함수 템플릿 인스턴스화 'void std::allocator<_Ty>::construct<_Objty,const NLogicLib::Room&>(_Objty *,const NLogicLib::Room &)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Ty=NLogicLib::Room,
+              _Objty=NLogicLib::Room
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(996): note: 컴파일 중인 함수 템플릿 인스턴스화 'void std::allocator_traits<_Alloc>::construct<_Ty,const NLogicLib::Room&>(std::allocator<_Ty> &,_Objty *,const NLogicLib::Room &)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Alloc=std::allocator<NLogicLib::Room>,
+              _Ty=NLogicLib::Room,
+              _Objty=NLogicLib::Room
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(995): note: 컴파일 중인 함수 템플릿 인스턴스화 'void std::allocator_traits<_Alloc>::construct<_Ty,const NLogicLib::Room&>(std::allocator<_Ty> &,_Objty *,const NLogicLib::Room &)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Alloc=std::allocator<NLogicLib::Room>,
+              _Ty=NLogicLib::Room,
+              _Objty=NLogicLib::Room
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory(225): note: 컴파일 중인 함수 템플릿 인스턴스화 'void std::_Wrap_alloc<std::allocator<_Ty>>::construct<_Ty,const NLogicLib::Room&>(_Ty *,const NLogicLib::Room &)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Ty=NLogicLib::Room
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory(225): note: 컴파일 중인 함수 템플릿 인스턴스화 'void std::_Wrap_alloc<std::allocator<_Ty>>::construct<_Ty,const NLogicLib::Room&>(_Ty *,const NLogicLib::Room &)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Ty=NLogicLib::Room
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory(251): note: 컴파일 중인 함수 템플릿 인스턴스화 '_FwdIt *std::_Uninitialized_copy_al_unchecked1<_InIt,_FwdIt,std::allocator<_Ty>>(_InIt,_InIt,_FwdIt,std::_Wrap_alloc<std::allocator<_Ty>> &,std::_General_ptr_iterator_tag,std::_Any_tag)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _FwdIt=NLogicLib::Room *,
+              _InIt=const NLogicLib::Room *,
+              _Ty=NLogicLib::Room
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory(264): note: 컴파일 중인 함수 템플릿 인스턴스화 '_FwdIt *std::_Uninitialized_copy_al_unchecked<const NLogicLib::Room*,_Iter,std::allocator<_Ty>>(_InIt,_InIt,_FwdIt,std::_Wrap_alloc<std::allocator<_Ty>> &)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _FwdIt=NLogicLib::Room *,
+              _Iter=NLogicLib::Room *,
+              _Ty=NLogicLib::Room,
+              _InIt=const NLogicLib::Room *
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(1653): note: 컴파일 중인 함수 템플릿 인스턴스화 '_FwdIt *std::_Uninitialized_copy<_Iter,NLogicLib::Room*,std::allocator<_Ty>>(_InIt,_InIt,_FwdIt,std::_Wrap_alloc<std::allocator<_Ty>> &)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _FwdIt=NLogicLib::Room *,
+              _Iter=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<NLogicLib::Room>>>,
+              _Ty=NLogicLib::Room,
+              _InIt=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<NLogicLib::Room>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(752): note: 컴파일 중인 함수 템플릿 인스턴스화 'NLogicLib::Room *std::vector<NLogicLib::Room,std::allocator<_Ty>>::_Ucopy<std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<NLogicLib::Room>>>>(_Iter,_Iter,NLogicLib::Room *)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Ty=NLogicLib::Room,
+              _Iter=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<NLogicLib::Room>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(751): note: 컴파일 중인 함수 템플릿 인스턴스화 'NLogicLib::Room *std::vector<NLogicLib::Room,std::allocator<_Ty>>::_Ucopy<std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<NLogicLib::Room>>>>(_Iter,_Iter,NLogicLib::Room *)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Ty=NLogicLib::Room,
+              _Iter=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<NLogicLib::Room>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(743): note: 클래스 템플릿 멤버 함수 'std::vector<NLogicLib::Room,std::allocator<_Ty>>::vector(const std::vector<_Ty,std::allocator<_Ty>> &)'을(를) 컴파일하고 있습니다.
+          with
+          [
+              _Ty=NLogicLib::Room
+          ]
+  c:\project\mygameserver\chatserver\logiclib\lobbymanager.cpp(62): note: 컴파일 중인 함수 템플릿 인스턴스화 'std::vector<NLogicLib::Room,std::allocator<_Ty>>::vector(const std::vector<_Ty,std::allocator<_Ty>> &)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Ty=NLogicLib::Room
+          ]
+  c:\project\mygameserver\chatserver\logiclib\lobby.h(106): note: 컴파일 중인 클래스 템플릿 인스턴스화 'std::vector<NLogicLib::Room,std::allocator<_Ty>>'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Ty=NLogicLib::Room
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\chrono(208): note: 컴파일 중인 클래스 템플릿 인스턴스화 'std::chrono::duration_values<_Rep>'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Rep=std::chrono::system_clock::rep
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\chrono(207): note: 클래스 템플릿 멤버 함수 'std::chrono::duration<std::chrono::system_clock::rep,std::chrono::system_clock::period> std::chrono::duration<std::chrono::system_clock::rep,std::chrono::system_clock::period>::zero(void)'을(를) 컴파일하고 있습니다.
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\chrono(237): note: 컴파일 중인 함수 템플릿 인스턴스화 'std::chrono::duration<std::chrono::system_clock::rep,std::chrono::system_clock::period> std::chrono::duration<std::chrono::system_clock::rep,std::chrono::system_clock::period>::zero(void)'에 대한 참조를 확인하십시오.
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\chrono(231): note: 컴파일 중인 클래스 템플릿 인스턴스화 'std::chrono::duration<std::chrono::system_clock::rep,std::chrono::system_clock::period>'에 대한 참조를 확인하십시오.
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\chrono(973): note: 컴파일 중인 클래스 템플릿 인스턴스화 'std::chrono::time_point<std::chrono::system_clock,std::chrono::system_clock::duration>'에 대한 참조를 확인하십시오.
+  Lobby.cpp
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(737): error C2280: 'NLogicLib::Room::Room(const NLogicLib::Room &)': 삭제된 함수를 참조하려고 합니다.
+  c:\project\mygameserver\chatserver\logiclib\room.h(75): note: 컴파일러에서 여기에 'NLogicLib::Room::Room'을(를) 생성했습니다.
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(857): note: 컴파일 중인 함수 템플릿 인스턴스화 'void std::allocator<_Ty>::construct<_Objty,_Ty>(_Objty *,_Ty &&)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Ty=NLogicLib::Room,
+              _Objty=NLogicLib::Room
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(857): note: 컴파일 중인 함수 템플릿 인스턴스화 'void std::allocator<_Ty>::construct<_Objty,_Ty>(_Objty *,_Ty &&)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Ty=NLogicLib::Room,
+              _Objty=NLogicLib::Room
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(996): note: 컴파일 중인 함수 템플릿 인스턴스화 'void std::allocator_traits<_Alloc>::construct<_Ty,_Ty>(std::allocator<_Ty> &,_Objty *,_Ty &&)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Alloc=std::allocator<NLogicLib::Room>,
+              _Ty=NLogicLib::Room,
+              _Objty=NLogicLib::Room
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(995): note: 컴파일 중인 함수 템플릿 인스턴스화 'void std::allocator_traits<_Alloc>::construct<_Ty,_Ty>(std::allocator<_Ty> &,_Objty *,_Ty &&)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Alloc=std::allocator<NLogicLib::Room>,
+              _Ty=NLogicLib::Room,
+              _Objty=NLogicLib::Room
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(930): note: 컴파일 중인 함수 템플릿 인스턴스화 'void std::_Wrap_alloc<std::allocator<_Ty>>::construct<_Ty,_Ty>(_Ty *,_Ty &&)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Ty=NLogicLib::Room
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(929): note: 컴파일 중인 함수 템플릿 인스턴스화 'void std::_Wrap_alloc<std::allocator<_Ty>>::construct<_Ty,_Ty>(_Ty *,_Ty &&)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Ty=NLogicLib::Room
+          ]
+  c:\project\mygameserver\chatserver\logiclib\lobby.cpp(34): note: 컴파일 중인 함수 템플릿 인스턴스화 'void std::vector<NLogicLib::Room,std::allocator<_Ty>>::emplace_back<NLogicLib::Room>(NLogicLib::Room &&)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Ty=NLogicLib::Room
+          ]
+  c:\project\mygameserver\chatserver\logiclib\lobby.cpp(34): note: 컴파일 중인 함수 템플릿 인스턴스화 'void std::vector<NLogicLib::Room,std::allocator<_Ty>>::emplace_back<NLogicLib::Room>(NLogicLib::Room &&)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Ty=NLogicLib::Room
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\chrono(208): note: 컴파일 중인 클래스 템플릿 인스턴스화 'std::chrono::duration_values<_Rep>'에 대한 참조를 확인하십시오.
+          with
+          [
+              _Rep=std::chrono::system_clock::rep
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\chrono(207): note: 클래스 템플릿 멤버 함수 'std::chrono::duration<std::chrono::system_clock::rep,std::chrono::system_clock::period> std::chrono::duration<std::chrono::system_clock::rep,std::chrono::system_clock::period>::zero(void)'을(를) 컴파일하고 있습니다.
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\chrono(237): note: 컴파일 중인 함수 템플릿 인스턴스화 'std::chrono::duration<std::chrono::system_clock::rep,std::chrono::system_clock::period> std::chrono::duration<std::chrono::system_clock::rep,std::chrono::system_clock::period>::zero(void)'에 대한 참조를 확인하십시오.
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\chrono(231): note: 컴파일 중인 클래스 템플릿 인스턴스화 'std::chrono::duration<std::chrono::system_clock::rep,std::chrono::system_clock::period>'에 대한 참조를 확인하십시오.
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\chrono(973): note: 컴파일 중인 클래스 템플릿 인스턴스화 'std::chrono::time_point<std::chrono::system_clock,std::chrono::system_clock::duration>'에 대한 참조를 확인하십시오.
+  Game.cpp
+  코드를 생성하고 있습니다...

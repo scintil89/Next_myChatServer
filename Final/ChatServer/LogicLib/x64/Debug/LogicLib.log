@@ -1,0 +1,47 @@
+﻿  PacketProcessLogin.cpp
+c:\project\final\chatserver\logiclib\lobbymanager.h(35): error C2039: 'CIocpServer': 'NServerNetLib'의 멤버가 아닙니다.
+  c:\project\final\chatserver\logiclib\lobbymanager.h(10): note: 'NServerNetLib' 선언을 참조하십시오.
+c:\project\final\chatserver\logiclib\lobbymanager.h(35): error C2061: 구문 오류: 식별자 'CIocpServer'
+c:\project\final\chatserver\logiclib\lobbymanager.h(35): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+c:\project\final\chatserver\logiclib\lobbymanager.h(42): error C2061: 구문 오류: 식별자 'TcpNet'
+c:\project\final\chatserver\logiclib\lobbymanager.h(52): error C2143: 구문 오류: ';'이(가) '*' 앞에 없습니다.
+c:\project\final\chatserver\logiclib\lobbymanager.h(52): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+c:\project\final\chatserver\logiclib\lobbymanager.h(52): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+  PacketProcessLobby.cpp
+c:\project\final\chatserver\logiclib\lobbymanager.h(35): error C2039: 'CIocpServer': 'NServerNetLib'의 멤버가 아닙니다.
+  c:\project\final\chatserver\logiclib\lobbymanager.h(10): note: 'NServerNetLib' 선언을 참조하십시오.
+c:\project\final\chatserver\logiclib\lobbymanager.h(35): error C2061: 구문 오류: 식별자 'CIocpServer'
+c:\project\final\chatserver\logiclib\lobbymanager.h(35): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+  Main.cpp
+c:\project\final\chatserver\logiclib\main.cpp(35): error C2039: 'Init': 'NServerNetLib::CIocpServer'의 멤버가 아닙니다.
+  c:\project\final\chatserver\servernetlib\iocpserver.h(11): note: 'NServerNetLib::CIocpServer' 선언을 참조하십시오.
+c:\project\final\chatserver\logiclib\main.cpp(37): error C3536: 'result': 초기화되기 전에 사용할 수 없습니다.
+c:\project\final\chatserver\logiclib\main.cpp(37): error C2678: 이항 '!=': 왼쪽 피연산자로 'int' 형식을 사용하는 연산자가 없거나 허용되는 변환이 없습니다.
+  c:\program files (x86)\windows kits\8.1\include\shared\guiddef.h(197): note: 'bool operator !=(const GUID &,const GUID &)'일 수 있습니다.
+  c:\project\final\chatserver\logiclib\main.cpp(37): note: 인수 목록 '(int, NServerNetLib::NET_ERROR_CODE)'을(를) 일치시키는 동안
+c:\project\final\chatserver\logiclib\main.cpp(61): error C2664: 'void NLogicLib::PacketProcess::Init(NLogicLib::PacketProcess::TcpNet *,NLogicLib::UserManager *,NLogicLib::LobbyManager *,NLogicLib::PacketProcess::ILog *)': 인수 1을(를) 'NServerNetLib::CIocpServer *'에서 'NLogicLib::PacketProcess::TcpNet *'(으)로 변환할 수 없습니다.
+  c:\project\final\chatserver\logiclib\main.cpp(61): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+c:\project\final\chatserver\logiclib\main.cpp(86): error C2039: 'Run': 'NServerNetLib::CIocpServer'의 멤버가 아닙니다.
+  c:\project\final\chatserver\servernetlib\iocpserver.h(11): note: 'NServerNetLib::CIocpServer' 선언을 참조하십시오.
+c:\project\final\chatserver\logiclib\main.cpp(90): error C2039: 'GetPacketInfo': 'NServerNetLib::CIocpServer'의 멤버가 아닙니다.
+  c:\project\final\chatserver\servernetlib\iocpserver.h(11): note: 'NServerNetLib::CIocpServer' 선언을 참조하십시오.
+c:\project\final\chatserver\logiclib\main.cpp(92): error C3536: 'packetInfo': 초기화되기 전에 사용할 수 없습니다.
+c:\project\final\chatserver\logiclib\main.cpp(92): error C2228: '.PacketId' 왼쪽에는 클래스/구조체/공용 구조체가 있어야 합니다.
+  c:\project\final\chatserver\logiclib\main.cpp(92): note: 'int' 형식입니다.
+c:\project\final\chatserver\logiclib\main.cpp(98): error C2664: 'void NLogicLib::PacketProcess::Process(NLogicLib::PacketProcess::PacketInfo)': 인수 1을(를) 'int'에서 'NLogicLib::PacketProcess::PacketInfo'(으)로 변환할 수 없습니다.
+  c:\project\final\chatserver\logiclib\main.cpp(98): note: 소스 형식을 가져올 수 있는 생성자가 없거나 생성자 오버로드 확인이 모호합니다.
+  LobbyManager.cpp
+c:\project\final\chatserver\logiclib\lobbymanager.cpp(29): error C2664: 'void NLogicLib::Lobby::SetNetwork(NLogicLib::TcpNet *,NLogicLib::ILog *)': 인수 1을(를) 'NLogicLib::LobbyManager::TcpNet *'에서 'NLogicLib::TcpNet *'(으)로 변환할 수 없습니다.
+  c:\project\final\chatserver\logiclib\lobbymanager.cpp(29): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+c:\project\final\chatserver\logiclib\lobbymanager.cpp(60): error C2039: 'SendData': 'NServerNetLib::CIocpServer'의 멤버가 아닙니다.
+  c:\project\final\chatserver\servernetlib\iocpserver.h(11): note: 'NServerNetLib::CIocpServer' 선언을 참조하십시오.
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  PacketProcess.cpp
+c:\project\final\chatserver\logiclib\lobbymanager.h(35): error C2039: 'CIocpServer': 'NServerNetLib'의 멤버가 아닙니다.
+  c:\project\final\chatserver\logiclib\lobbymanager.h(10): note: 'NServerNetLib' 선언을 참조하십시오.
+c:\project\final\chatserver\logiclib\lobbymanager.h(35): error C2061: 구문 오류: 식별자 'CIocpServer'
+c:\project\final\chatserver\logiclib\lobbymanager.h(35): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+  코드를 생성하고 있습니다...
+  건너뛰고 있습니다... (관련된 변경 내용 없음)
+  PacketProcessRoom.cpp

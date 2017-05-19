@@ -25,6 +25,7 @@
     <ClInclude Include="..\..\Common\PacketID.h" />
     <ClInclude Include="ConnectedUserManager.h" />
     <ClInclude Include="ConsoleLogger.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="Lobby.h" />
     <ClInclude Include="LobbyManager.h" />
     <ClInclude Include="Main.h" />
@@ -35,6 +36,7 @@
     <ClInclude Include="UserManager.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Lobby.cpp" />
     <ClCompile Include="LobbyManager.cpp" />
     <ClCompile Include="Main.cpp" />

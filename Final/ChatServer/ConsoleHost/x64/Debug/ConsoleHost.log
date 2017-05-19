@@ -1,0 +1,6 @@
+﻿  main.cpp
+c:\project\final\chatserver\logiclib\main.h(48): error C2039: 'CIocpServer': 'NServerNetLib'의 멤버가 아닙니다.
+  c:\project\final\chatserver\logiclib\main.h(9): note: 'NServerNetLib' 선언을 참조하십시오.
+c:\project\final\chatserver\logiclib\main.h(48): error C2065: 'CIocpServer': 선언되지 않은 식별자입니다.
+c:\project\final\chatserver\logiclib\main.h(48): error C2923: 'std::unique_ptr': 'CIocpServer'은(는) '_Ty' 매개 변수에 대한 올바른 템플릿 형식 인수가 아닙니다.
+c:\project\final\chatserver\logiclib\main.h(48): error C3203: 'default_delete': 특수화되지 않은 클래스 템플릿은(는) 템플릿 매개 변수 '_Dx'에 대한 템플릿 인수로 사용할 수 없습니다. 실제 형식이 필요합니다.
